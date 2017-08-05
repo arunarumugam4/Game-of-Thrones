@@ -1,0 +1,64 @@
+.showcase {
+    width:100%;
+}
+
+.grandparent{
+    padding:2%;
+}
+
+.parent {
+    height:400px;
+    overflow:hidden;
+    width:100%;
+    background-color:black;
+    padding:0;
+}
+
+.child {
+    text-align:center;
+    margin-top:;
+    width:100%;
+    height:400px;
+    
+    background-attachment:local;
+    background-position:contents;
+    background-size:cover;
+    background-repeat:no-repeat:
+    transform:scale(1);
+    transform-origin:center;
+    transition-duration:1.5s;
+    transition-timing-function:ease-in-out;
+     opacity:0.5;
+    }
+.child:hover {
+    transform:scale(1.1);
+    transform-origin:center;
+    transition-duration:1.5s;
+    transition-timing-function:ease-in-out;
+    opacity:1;
+}
+
+.child1{
+    background-image:url('../images/books-main.jpg');
+}
+.child2{
+    
+     background-image:url('../images/characters.jpg');
+}
+.child3{
+    
+     background-image:url('../images/houses.jpg');
+}
+
+.introbtn {
+   margin-top:200px;
+   padding:;
+   color:white;
+   font-family: 'Montserrat', sans-serif;
+   cursor:pointer;
+   background-color:#daad86 !important;
+   border:0 !important;
+   
+}
+
+

@@ -1,0 +1,201 @@
+body, html {
+	margin:0;
+	padding:0;
+	background-color:;
+	
+}
+
+/* NAVBAR STYLES */
+.navbar {
+	height:75px !important;
+	margin:0;
+	background-color:#22264b;
+	z-index:2;
+	border:0 !important;
+	border-radius:0!important;
+}
+
+
+#logo1 {
+	width:90px;
+}
+
+#logo2 {
+	width:90px;
+	margin-top:-11px;
+
+}
+
+#myNavbar {
+	margin-top:;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-decoration:none;
+	font-weight:3px;
+	color:white;
+}
+
+.navbar-toggle{
+	margin-top:20px;
+	margin-right:;
+	width:30px;
+	padding:2px;
+	height:30px;
+	padding-left:3px;
+	background-color:;
+	border:1px solid white;
+}
+
+.icon-bar{
+	background-color:white !important;
+	
+}
+
+.navbar-collapse {
+	width:;
+	margin:0;
+	margin-top:15px !important;
+	background-color:#22264b;
+	z-index:2;
+}
+
+.active {
+	background-color:#daad86;
+	border-radius:3px;
+}
+
+.navelem {
+	border-radius:3px;
+	margin:1.3px;
+}
+
+
+.navelem:hover {
+	background-color:#daad86 !important;
+	opacity:;
+	border-radius:3px;
+}
+
+/* -------------------------------------------------------------- */
+/* BODY SECTION STYLES */
+#bodysection{
+	z-index:0;
+	background-color:#c5d5cb;
+}
+/* ------------------------------------------------------------- */
+
+/* BANNER SECTION SYLE */	
+
+#banner{
+	border:15px solid #22264b;
+	height:400px;
+	width:100%;
+	padding:0;
+	margin:0;
+	margin-top:90px;
+}
+
+/* ------------------------------------------------------------- */
+
+/* VIEW SECTION STYLE */
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* VEDION SECTION STYLE */
+
+#vediosection{
+	padding-top:5px;
+
+}
+
+/* ------------------------------------------------------------ */
+/* NEWS SECTION STYLE */
+#staticnews {
+	text-align:center;
+	margin:;
+	background-color:#22264b;
+	padding:5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-decoration:none;
+	font-weight:3px;
+	color:white;
+	margin-bottom:7px;
+}
+
+.chatroom {
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration:none;
+	font-weight:3px;
+	color:white;
+	text-align:left;
+	text-shadow:2px 2px 2px black;
+    
+
+}
+
+.chathead{
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align:center;
+	background-color:#daad86;
+	text-shadow:2px 2px 2px black;
+}
+
+.chatheadmain{
+	width:100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align:center;
+	background-color:#daad86;
+	text-shadow:2px 2px 2px black;
+}
+
+.popees {
+   
+    width:100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	text-transform:;
+	letter-spacing: 1px;
+	text-decoration:none;
+	font-weight:3px;
+	color:black;
+	text-align:center;
+	text-shadow:;
+	margin:;
+	background-color:#daad86;
+	padding:5px;
+	
+	
+
+}
+.popee{
+	display:flex;
+	flex-wrap:row;
+	font-family: 'Montserrat', sans-serif;
+	background-color:#22264b;
+	padding:15px;
+	margin:6px;
+	display:none;
+}
+
+#popimg{
+	width:100%;
+	margin-bottom:4%;
+	
+}
+
+/* ---------------------------------------------------------------- */
