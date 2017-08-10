@@ -1,0 +1,40 @@
+<div>
+<div id='maincharacter' class='col-lg-12' ng-repeat='data in datas' >
+    <div id='charactercover' class='col-lg-6'> 
+    <div id='imgalternate'><img  id='charactercoverimg'  ng-src='{{characterimg[data.name || data.aliases[0]]}}' /></div>
+        
+    </div>
+    <div id='characterdescription' class='col-lg-6'>
+    <h3 ng-if='data.name.length>1'>Name : {{data.name}} </h3>
+    <h3 ng-if='data.region.length>1'>Region : {{data.region
+}} </h3>
+    <h3 ng-if='data.coatOfArms.length>1'>Coat Of Arms : {{data.coatOfArms}} </h3>
+    <h3 ng-if='data.founded.length>1'>founded : {{data.founded}} </h3>
+    <h3 ng-if='data.words.length>1'>words : {{data.words}} </h3>
+    
+    
+    <h3 ng-if='data.culture.length>1'>Culture : {{data.culture}} </h3>
+    <h3 ng-if='data.seats[0].length>1'>Seats: {{data.seats[0]}}</h3>
+    <h3 ng-if='data.titles[0].length>1'>Titles: {{data.titles | }}</h3>
+   
+
+      
+</div>
+
+</div>
+
+ <div class='col-lg-12'>
+  <div class="container-fluid">
+  
+                  
+  <ul class="pager">
+    <li class="previous"><a ng-click="previous()">Previous</a></li>
+    <li class="next"><a ng-click="next()">Next</a></li>
+  </ul>
+</div>
+  
+     
+     </div> 
+    
+    
+    </div>

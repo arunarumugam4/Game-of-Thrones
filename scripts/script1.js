@@ -14,7 +14,7 @@ $(document).ready(function(){
   
 
   $.imageurl = [];
-  $.searchkey = "Game of thrones";
+  $.searchkey = "Game of thrones season 7 hd images";
   $.myurl = "https://www.googleapis.com/customsearch/v1?q="+$.searchkey+"&cx=013925633981226473305%3A8qlxinkhy-m&fileType=jpg&imgSize=large&imgType=face&num=10&safe=high&searchType=image&key=AIzaSyB6qbkLW1PU7V65U-S3KLx7Mja2VgwHoa8";
   $.ajax({
     url: $.myurl,

@@ -17,6 +17,10 @@ app.config(function($routeProvider){
         templateUrl:'./angular/views/houses-view.html',
         controller:'houseController'
     })
+    .when('/books/detail',{
+        templateUrl:'./angular/views/book-detail-view.html',
+        controller:'bookController'
+    })
     .otherwise({
         redirectTo:'/'
     })

@@ -1,0 +1,25 @@
+<div  class='col-lg-12'>
+  <div class='row'>
+ <div id='bookdetailcovercover' class='col-lg-5'>
+   <img class='bookdetailcover' ng-src="../app/images/{{datas[$parent.ind].name}}.jpg" />
+     </div>
+  <div id='bookcovernamecover' class='col-lg-7'>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Name</span> : {{datas[$parent.ind].name}}</h4>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Author</span> : {{datas[$parent.ind].authors[0]}}</h4>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Country</span> : {{datas[$parent.ind].country}}</h4>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Number of pages</span> : {{datas[$parent.ind].numberOfPages}}</h4>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Publisher</span> : {{datas[$parent.ind].publisher}}</h4>
+      <h4 class='bookcovername'><span style="color:#daad86;" >Released</span> : {{datas[$parent.ind].released | date}}</h4>
+      
+</div>
+      
+      <div  id='bookcoverdescription' class='col-lg-12'>
+       <h3 class='bookdescriptiontitle'>Main Characters in the Book</h3>        
+    <h4 class='bookdescription' style="color:white;" ng-repeat='name in $parent.names'> {{name}} </h4> 
+      </div>
+     
+     
+
+</div>
+
+</div>
