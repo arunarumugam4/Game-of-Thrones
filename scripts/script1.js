@@ -81,7 +81,7 @@ $(document).ready(function(){
  
 
  /* ENGINE FOR RECENT NEWS (NESAPI.ORG API)  */
- /* JQUERY POPOVER PLUGIS IS ADDED (LINK TO THE PLUGIN DOCUMENTS : https://github.com/sandywalker/webui-popover)  */
+ /* JQUERY POPOVER PLUGINS IS ADDED (LINK TO THE PLUGIN DOCUMENTS : https://github.com/sandywalker/webui-popover)  */
 
 
  $.chanels = ["google-news","cnn","bbc-news","bbc-sport","buzzfeed","daily-mail","reuters","techcrunch","the-next-web"];

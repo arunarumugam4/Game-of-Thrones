@@ -1,7 +1,7 @@
 
 <div  class='col-lg-6' ng-repeat='data in datas'>
   <div id='bookparent'> 
- <a  href='#!books/detail'  ><img class='bookcover' ng-src='../app/images/{{data.name}}.jpg' ng-click="bookdetail($index)"  /></a>
+ <a  href='#!books/detail'  ><img class='bookcover' ng-src='images/{{data.name}}.jpg' ng-click="bookdetail($index)"  /></a>
   <h5 class='bookshortdetails'>Book : {{data.name}}</h5>
   <h5 class='bookshortdetails'>Author : {{data.authors[0]}}</h5>
       
