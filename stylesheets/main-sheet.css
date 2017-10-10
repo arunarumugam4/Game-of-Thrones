@@ -157,7 +157,9 @@
 }
 
 #loadicon {
-    text-align:center;
+    display:block;
+	margin:auto;
+	margin-top:10%;
     
 }
 
