@@ -7,7 +7,9 @@ $(document).ready(function(){
 
 
 
-
+   /* LOADING ICON SETUP */
+  $('#loadicon').hide();
+  
 
   /* ENGINE FOR ACCESSING IMAGES (GOOGLE CLOUD CUSTOM SEARCH API) */
 
