@@ -9,6 +9,9 @@ $(document).ready(function(){
 
    /* LOADING ICON SETUP */
   $('#loadicon').hide();
+   
+   // LOCAL LOAD ICON
+     $('#localload').hide();
   
 
   /* ENGINE FOR ACCESSING IMAGES (GOOGLE CLOUD CUSTOM SEARCH API) */
