@@ -8,12 +8,18 @@ app.controller('characterController',['$scope','$http','$log',function($scope,$h
     
     // SHOW LOADING ICON
      $('#loadicon').show();
+    // LOCAL LOAD ICON
+     $('#localload').hide();
+
     
     $scope.key='characters';
     $scope.ref = $scope;
     $scope.ref.page=1;
     $scope.next = function(){
         
+        // LOCAL LOAD ICON
+        $('#localload').show();
+
         $scope.ref.page +=1;
        
         
@@ -22,7 +28,9 @@ app.controller('characterController',['$scope','$http','$log',function($scope,$h
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
               
-              
+              // LOCAL LOAD ICON
+              $('#localload').hide();
+
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -52,6 +60,18 @@ function(error){
     }
     
     $scope.previous = function(){
+        
+        // LOCAL LOAD ICON
+        $('#localload').show();
+        
+         if($scope.page<=1){
+
+          // LOCAL LOAD ICON
+         $('#localload').hide();
+
+
+         }
+
         if($scope.page>1){
         $scope.ref.page -=1;
         
@@ -59,6 +79,8 @@ function(error){
         method:'GET',
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
+              // LOCAL LOAD ICON
+             $('#localload').hide();                 
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -201,11 +223,17 @@ app.controller('houseController',['$scope','$http',function($scope,$http){
     // SHOW LOADING ICON
      $('#loadicon').show();
     
+    // LOCAL LOAD ICON
+     $('#localload').hide();
+    
     $scope.key='houses';
     
     $scope.ref = $scope;
     $scope.ref.page=1;
     $scope.next = function(){
+        
+        // LOCAL LOAD ICON
+        $('#localload').show();
         
         $scope.ref.page +=1;
        
@@ -215,7 +243,8 @@ app.controller('houseController',['$scope','$http',function($scope,$http){
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
                 
-                              
+              // LOCAL LOAD ICON
+              $('#localload').hide();                
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -245,6 +274,15 @@ function(error){
     }
     
     $scope.previous = function(){
+        
+        // LOCAL LOAD ICON
+        $('#localload').show();
+        
+        if($scope.page<=1){
+            // LOCAL LOAD ICON
+            $('#localload').hide();
+        }
+        
         if($scope.page>1){
         $scope.ref.page -=1;
         
@@ -252,6 +290,9 @@ function(error){
         method:'GET',
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
+             
+             // LOCAL LOAD ICON
+             $('#localload').hide();
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
