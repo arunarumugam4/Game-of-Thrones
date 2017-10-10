@@ -22,8 +22,7 @@ app.controller('characterController',['$scope','$http','$log',function($scope,$h
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
               
-              // SHOW LOADING ICON
-              $('#loadicon').hide(); 
+              
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -94,6 +93,9 @@ function(error){
         method:'GET',
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
+                               
+              // HIDE LOADING ICON
+              $('#loadicon').hide();                 
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -175,7 +177,7 @@ function(error){
         url:"https://www.anapioficeandfire.com/api/"+$scope.key
     }).then(function(response){
                
-             // SHOW LOADING ICON
+             // HIDE LOADING ICON
              $('#loadicon').hide();
         
               $scope.datas = response.data;                 
@@ -213,8 +215,7 @@ app.controller('houseController',['$scope','$http',function($scope,$http){
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
                 
-                               // SHOW LOADING ICON
-                              $('#loadicon').hide();
+                              
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
@@ -285,6 +286,9 @@ function(error){
         method:'GET',
         url:"https://www.anapioficeandfire.com/api/"+$scope.key+"?page="+$scope.ref.page+"&pageSize=5"
     }).then(function(response){console.log(response)
+            
+                                // HIDE LOADING ICON
+                                $('#loadicon').hide(); 
                                
               $scope.datas = response.data;  
               $scope.characterimg = {};
